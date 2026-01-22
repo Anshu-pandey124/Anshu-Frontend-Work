@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Boxmodel</title>
+    <style>
+        .box{
+            background-color: rgb(31, 158, 158);
+        }
+        .box1{
+            color: pink;
+            margin: 5px;
+            padding: 10px;
+            border: 3px solid rgb(16, 16, 110);
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: rgb(173, 45, 45);
+            margin: 10px;
+            padding: 10px;
+            border: 3px solid rgb(16, 16, 110);
+            height: 200px;
+            box-sizing: border-box;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"> I am a box</div>
+    <div class="box box2">I am a another box</div>
+</body>
+</html>
+
+<!--div, span, container all of these are BOX-->
+<!-- margin collapse when 2 elements margins are colide then max margin is consider as a margin -->
