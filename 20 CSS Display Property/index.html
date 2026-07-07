@@ -1,0 +1,51 @@
+<!-- display property -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            border: 2px solid blue;
+            /* display: inline; */
+            display: inline-block;
+            width: 300px;
+            /* width ko work karane ke liye inline block karna hoga */
+            /* block element inline element ban jate hai */
+            padding: 45px;
+            margin: 34px;
+            /* inline element upper padding and margin work ni karta hai 
+            Agar padding and margin dikhana hai upar se bhi to "display inline block karna hoga" */
+            display: flex;
+            /* use karne se likha hua bich me aa jata hai 
+            "inline flex" karne se sari block ek line me aa jayege */
+        }
+        .box1{
+            display: none;
+            /* use karne pe jgh aor likha hua dono gayab ho jata hai */
+            visibility: hidden;
+            /* use karte hai chahe ki space ghira hua rahe */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">Also a box</div>
+    <span>I am a good</span>
+    <span>boy</span>
+</body>
+
+</html>
+
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display-->
+ <!-- control click karke link open kar sakte hai -->
