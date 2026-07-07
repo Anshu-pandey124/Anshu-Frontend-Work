@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 100px;
+            padding: 0;
+        }
+        .box{
+            box-sizing: border-box;
+            background-color:pink;
+            border: 2px solid blueviolet;
+            /* width: 233px; */
+            width: 80vw;
+            /* height: 10vh; */
+            /* min-height: 50px; */
+            /* block level elements hi center hoge 
+            inline elements center ni hoge */
+            /* lapt ki width rahegi ye puri width le lega */
+            margin: 23px auto;
+        }
+        .container > p{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 80vw; */
+            /* % cover width */
+            /* height: 80vh; */
+            /* % cover height */
+            margin: 23px auto;
+            font-size: 16px;
+            background-color: aquamarine;
+        }
+        .container > p > div{
+            margin: 0px;
+            font-size: 2em; 
+            width: 50%;
+            /* 1em is use for font size (multiple of font size) */
+            /* 1em = 20px
+            2em = 40px */
+            /* em child font size ke liye use karte hai parent font size pe depended hota hai
+            rem kisi pe depended nhi hota hai
+            1rem = 16px
+            2rem = 32px */
+        }
+        .mycont{
+            border: 2px solid black;
+            box-sizing: border-box;
+            /* background-color: rgb(221, 101, 203); */
+            margin: 23px auto;
+            color: rgb(125, 22, 22);
+            font-size: 22px;
+            /* width: 80vw; */
+            width: 50%;
+            /* vmin and vmax */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+
+    <!-- block element pe center ho jayega "margin auto lagane pe 
+     inline elements pe ni hoga-->
+     <div class ="container">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam porro itaque, sapiente voluptatum explicabo tenetur vitae non eos, a nulla asperiores aut corrupti aperiam nihil laboriosam nisi, error repudiandae odio. Voluptatum earum ab eligendi, atque nulla magni labore reprehenderit mollitia cum laudantium odio saepe numquam! </p>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde laborum exercitationem odio consectetur ipsa error, explicabo natus suscipit atque, laboriosam recusandae fugit, mollitia vitae a! Eveniet adipisci provident quam iure! Cum molestias asperiores necessitatibus eos quam nemo deleniti doloribus magni officia sunt assumenda nam corporis veniam ratione repellat animi vel debitis molestiae nostrum, deserunt sed maxime accusantium magnam. Magni temporibus vero ducimus perferendis qui quibusdam enim deleniti asperiores atque magnam modi recusandae delectus fugit obcaecati provident unde voluptate dicta quisquam corporis debitis, nihil eveniet. Minima, doloribus dignissimos quaerat quibusdam eveniet distinctio architecto expedita vitae aliquid voluptatem quis delectus blanditiis sit vel. Sunt, labore! Amet blanditiis nisi, facere totam ullam dolorem autem laudantium voluptatum nam obcaecati facilis rem expedita labore dicta illo adipisci reprehenderit asperiores consequuntur. Praesentium laudantium at eum ex! Nemo, dolor odio a voluptas provident voluptatibus fugit eaque reprehenderit aspernatur sunt perferendis aut! Distinctio necessitatibus hic reprehenderit vitae atque veniam autem. Repudiandae esse molestias non accusantium natus! Inventore, illo ducimus, quisquam fugiat architecto quidem sunt nobis, nesciunt excepturi repellat accusamus sequi dignissimos! Voluptatum ipsam aliquam ut? Porro, ex placeat? Incidunt in laboriosam suscipit error enim. Corrupti consequatur, velit voluptatem nisi voluptatum vero dolorum ducimus reprehenderit error in atque? Rerum beatae sunt nihil iusto voluptatem! Architecto, minima qui facilis, doloribus earum sapiente iusto ducimus asperiores totam ad voluptas fugit quae porro laborum aut. Hic doloremque maxime aspernatur tenetur accusantium inventore aut quia sit. Ratione repellendus asperiores rerum, aliquid facilis iste? Quis iusto hic libero. Ex et libero distinctio quasi doloribus dolore eum eaque quam fugiat omnis assumenda autem voluptates repellendus ipsam culpa vitae itaque, ad aperiam nemo. Voluptates ducimus, quidem amet perferendis sit, cum dolore temporibus consequuntur nobis laboriosam possimus voluptatum nemo voluptatem veritatis eos facilis? Iusto laudantium voluptas sapiente perferendis esse ipsam, nesciunt rerum, laboriosam temporibus nemo consequuntur molestiae odit. Optio saepe, molestiae architecto eveniet excepturi recusandae tenetur dignissimos labore, nostrum eius facilis eaque necessitatibus quia maxime deleniti blanditiis perspiciatis error aut vero odit ducimus beatae temporibus modi. Impedit, veniam fuga asperiores eius vitae, incidunt placeat maxime perferendis adipisci esse eos omnis. Nisi sequi delectus nemo, nam ut, rem placeat asperiores voluptas magni voluptatum neque. Provident, praesentium rerum ipsa distinctio magnam nemo omnis veniam, voluptatum ullam tempora repellat vitae facilis delectus, nobis deleniti laborum molestias sed pariatur sapiente eos perspiciatis? Maxime, quasi commodi. Deserunt iste sit a aut maxime quae voluptate minus facilis sapiente! Delectus laudantium est ut repellendus porro fuga illum at sunt non aut dignissimos officia quasi nostrum maiores, saepe eius harum, consectetur ex error, dicta eum aspernatur? Perspiciatis dignissimos cum mollitia obcaecati harum error ab culpa neque quidem vero rerum aperiam quod molestias totam recusandae tempore nostrum veritatis unde id, delectus ullam! Explicabo et voluptatem veritatis dolor laudantium soluta blanditiis pariatur.
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eos incidunt est id animi quod quasi, blanditiis eius? Temporibus ab accusantium tempore incidunt!</p>
+        </div>
+     </div>
+     <div class="mycont">
+        i am another container
+     </div>
+
+</body>
+</html>
