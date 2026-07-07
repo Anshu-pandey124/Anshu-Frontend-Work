@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity and cascade</title>
+    <style>
+         /* The specificity of this selector is 1 + 10 =11*/
+        h1.cyellow{
+            color: burlywood;
+            /* h1 ki wajh se 1 specificity milli aoe cyellow class ki wajh se 10 ki specificity mili */
+        }
+        /* The specificity of this selector is 1 */
+        h1{
+            color: rgb(53, 25, 212);
+        }
+
+        /* The specificity of this selector is 10 */
+        .cyellow{
+            color: yellow; 
+        }
+
+         /* The specificity of this selector is 10 */
+        .cred{
+            color: red;
+        }
+
+         /* The specificity of this selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+
+         /* The specificity of this selector is 1 */
+        h1{
+            color: brown;
+        }
+        /* ek tarah ke selector rahega to last wala selector apply hoga */
+
+        /* The specificity of Attribute selector is 10 */
+        [data-x=a]{
+            /* background-color: aqua;  */
+            color: maroon;
+        }
+        /* Attibute Selector */
+        h2{
+            color: maroon !important;
+        }
+        .pink{
+            color: pink;
+        }
+        /* The specificity of this selector is 1 + 10 + 10 + 10 + 10 = 41 */
+        a.anshuclass.anshu-class[href]:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="cyellow cred.cpurple" data-x="a">
+            CSS Specification
+            <!-- cascode algorithm ka use hota hai ki kkonsi property apply ki jayegi konsi nahi -->
+        </h1>
+        <h2 class="pink">hey i am Anshu</h2>
+    </div>
+</body>
+</html>
+
+<!-- Hirarcy of SELECTOR -->
+<!-- inline Style > ID Sectector > Class or Attribute Selector > Element Selector > Universal Selector -->
+ <!-- !important ko hamesa preority milegi -->
+
+ <!-- specificity equal hogi to last wala color apply hoga -->
+
+
+ <!-- CASCADE ALGORITHM  -->
+  Cascade Algorithm is a technique used to resolve conflicts or apply rules in a specific priority order. 
+  The meaning depends on the context. 
+  In web development, it is most commonly associated with the CSS Cascade Algorithm.
+
+  The CSS Cascade Algorithm decides which CSS rule is applied when multiple rules target the same HTML element.
+  
+  Order of Priority
+  1. Importance:- !important rules have the highest priority.
+  2. Origin:- Browser styles, User styles, Author (developer) styles
+  3. Specificity:- Inline styles (style="") have higher priority than IDs.
+  4. Source Order:- If all the above are equal, the rule written later in the CSS file wins.
