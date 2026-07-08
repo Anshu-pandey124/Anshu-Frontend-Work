@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Shadow and Text Shadow</title>
+    <style>
+        .box {
+            border: 2px solid black;
+            padding: 30px;
+            margin: 30px;
+            width: 300px;
+            box-shadow: 5px 5px 15px 5px #832c2c;
+        }
+        .text-shadow{
+            text-shadow:  5px 5px 15px #832c2c;
+            outline: 2px solid black;
+            border: 2px solid green;
+            outline-offset: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        I am a box
+    </div>
+    <p class="text-shadow">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam eaque porro debitis, nihil praesentium quod natus voluptatum. Tempore modi delectus quaerat illo officiis, error sint iusto incidunt provident hic aliquid cupiditate ex assumenda odio, eaque pariatur nisi est minima molestias porro quasi magni. Temporibus, minima!</p>
+</body>
+</html>
+<!-- box-shadow: h-offset, v-offset, blur, spread, color, inset;-->
+<!-- box-shadow: 5px 5px 15px 5px #888888; -->
+<!-- text-shadow: h-offset, v-offset, blur, color, inset; -->
+<!-- text-shadow: 2px 2px 5px #832c2c; -->
+<!-- diffence between border and outline is that border takes up space and outline does not take up space -->
