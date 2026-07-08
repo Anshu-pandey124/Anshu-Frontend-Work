@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Position Property</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            border: 2px solid black;
+            height: 100px;
+            width: 150px;
+            margin: 5px;
+        }
+        .box1{
+            background-color: rgb(206, 103, 103);
+            position: absolute;
+        /* nearest position ancester ke hisab se top bottom left right fix hota hai position absolute karne pe */
+            top: 0px;
+            left: 10px;
+            /* position: sticky; */
+        /* position sticky ka mtlb hota hai box hamesa upar raheta hai kitna bhi scroll kar lo */
+            /* top: 0px;
+            height: 100px;
+            width: 100%;
+            margin: 0;
+            padding: 0; */
+        }
+        .box2{ 
+            background-color: rgb(234, 88, 234);
+            /* position: relative;  */
+            /* left: 10px; */
+            /* top: 20px; */
+            /* bottom:20px; */
+            /* right:10px; */
+        /* relative means top bottom left right properties laga sakte hai */
+        }
+        .box3{
+            background-color: aqua;
+            /* position: fixed; */
+        /* position fixed me box ki position fix ho jati hai wo hatti ni hai ek hi jgh rah jati hai*/
+            /* bottom: 0px; */
+            /* left: 25vw; */
+        }
+        .box4{background-color: turquoise;
+        }
+
+        .parent{
+            padding: 50px;
+            margin: 20px;
+            border:2px solid purple;
+            position: fixed;
+        /* parent me position absolute ki property laga lege to boxes parent box ke hisab se move karege */
+
+/* EXCEPTIONS */
+        /* asked in interviews transform, filter or perspective properties kiske relative kam karti hai answer hai parent ke relative me */
+            /* position: relative; */
+            /* transform: translate(0); */
+        /* transform, filter  or perspective properties can also make an element appear as positioned */
+            /* filter: invert(0); */
+            /* perspective: oem; */
+        /* parent ke relative position karega filter and transform property */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div class=" box box1"></div>
+    <div class=" box box2"></div>
+    <div class=" box box3"></div>
+    <div class=" box box4"></div>
+    </div>
+</body>
+</html>
+
+<!-- position nhi di raheti hai to wo position element hota hai -->
+ <!-- diffence between fixed and sticky position -->
