@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables</title>
+    <style>
+        :root {
+            --color: rgb(208, 96, 212);
+            --seccolor: rgb(165, 41, 206);
+            --defpad: 10px;
+            --defop: 0.3; 
+        /* global variable */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .nav {
+            /* background-color: rgb(112, 199, 199); */
+            background-color: var(--color);
+        }
+        ul {
+            display: flex;
+        }
+        ul li{
+            opacity: var(--defop);
+            /* color blur ho jate hai s */
+            list-style: none;
+            padding: var(--defpad);
+            margin: 5px;
+            border: 3px solid var(--seccolor);
+        }
+        ul li:first-child {
+            --color: rgb(80, 27, 87);
+            background-color: var(--color);
+        }
+        .container {
+            /* background-color: rgb(55, 153, 214); */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, vel architecto! Asperiores deleniti dolor non, assumenda rem mollitia laudantium. Ipsum incidunt quisquam mollitia, voluptates accusantium, maxime, eveniet eum non nobis molestias recusandae sit. Harum repellendus dolor aliquam quis recusandae ab nesciunt, nobis magni totam animi.
+    </div>
+</body>
+</html>
+
+<!-- interview question :- css variables kya sirf colour change karta hai , answer:- nhi.
+  css variables color, background, urs, numbers hold kar sakte hai aor wo sab chije jo change ki jati hai  -->
+  <!-- variables ka use karte hai eksath bahot sari jgh chijo ko change karne ke liye eksath -->
