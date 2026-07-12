@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float and Clear</title>
+    <style>
+        .cards {
+            border: 2px solid #000000;
+            margin: 5px;
+            display: flow-root;
+            /* agar koi image di gai hoti hai aor likha hota hai to border image ko bhi cover karta hai */
+        }
+
+        .card {
+            border: 2px solid blueviolet;
+        }
+
+        img {
+            float: left;
+            /* float use karne se likha hota hsi wo left right top ys bottom shift kar sakte hai */
+            /* image ko float karne ke liye use hota hai */
+        }
+
+        .card1 {
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cards">
+        <img width="200px" height="300px"
+            src="https://wallpapers.com/images/hd/your-name-anime-taki-and-mitsuha-dmeyxqbgnargyvrb.jpg" alt="">
+        <div class="card">card 1
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus voluptatem temporibus quod modi porro,
+                earum sapiente magnam quos distinctio labore provident? Earum, corporis quam velit pariatur repellendus,
+                ipsam nobis incidunt dolore numquam quis voluptatum.
+            </p>
+        </div>
+        <div class="card card1">card 2
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur alias quia accusantium
+                consequatur, voluptatem assumenda excepturi aliquam. Officiis veniam ratione nemo ab voluptatem
+                cupiditate molestias recusandae nisi iste facere? Perspiciatis quod vitae amet minus sed, provident illo
+                repellat non maiores vero earum maxime a ipsam quasi vel nostrum commodi alias ratione recusandae at
+                veniam ex, deserunt omnis corrupti. Vitae possimus atque neque voluptas iusto placeat, quod omnis
+                praesentium soluta, consectetur architecto laudantium beatae a tempora ducimus. Nulla voluptatum
+                assumenda tempora recusandae dolorem saepe quasi doloribus dolor veritatis temporibus nesciunt
+                necessitatibus neque ipsam a magnam commodi reprehenderit modi nobis aliquid ipsum, adipisci molestiae
+                delectus mollitia porro. Earum porro iste sunt? Dolor, minima! Repellendus obcaecati modi iste fuga
+                dolorem, quisquam officia beatae. Atque enim rerum corrupti quidem nam perspiciatis. Facere nisi, vitae
+                praesentium maxime voluptates odit voluptas suscipit numquam dignissimos officia doloribus eius alias,
+                pariatur consequuntur perspiciatis provident reprehenderit, qui hic? Cum quam excepturi quia quis
+                dignissimos labore? Asperiores corrupti natus fuga illum, ullam aspernatur sequi? Id, esse facere. Culpa
+                reprehenderit alias recusandae suscipit doloribus enim accusantium sapiente possimus animi facere.
+                Quibusdam commodi, quia vero vel repudiandae praesentium cupiditate deserunt fuga eaque nesciunt
+                pariatur rem harum? Veniam, enim doloribus dignissimos beatae officia itaque consequuntur ad dicta
+                provident perferendis expedita molestias magnam voluptatum. Consectetur dolores impedit velit laudantium
+                aperiam quas veniam. Praesentium maiores placeat ipsam fugiat eos. Aliquid asperiores doloremque totam
+                molestias, aperiam provident vitae adipisci debitis optio quas unde molestiae pariatur veritatis
+                corrupti, eius modi tempora! Labore saepe tempora voluptas minus cupiditate officiis, soluta ut
+                molestias repellat cum laudantium, similique, iste facilis ex error odit aspernatur nam ducimus dolorum
+                mollitia quas! Placeat amet culpa aperiam, earum nobis quaerat illum qui provident veritatis quidem
+                beatae mollitia aspernatur nemo ea dolorem? Quos, aliquam expedita! Deleniti similique beatae sapiente
+                sint consectetur ex aut harum qui officiis mollitia iusto asperiores assumenda necessitatibus enim
+                adipisci cupiditate maxime distinctio, provident quod animi placeat debitis deserunt hic illum? Soluta,
+                dolore laboriosam minus quaerat perferendis eum, repellendus sunt earum quibusdam ipsa eligendi itaque
+                nam, dolor incidunt error voluptatem hic consequatur architecto consequuntur animi? Numquam iste non
+                doloremque quae, similique maiores quo esse eaque amet repudiandae veritatis, libero beatae voluptas!
+            </p>
+        </div>
+        <div class="card">card 3</div>
+    </div>
+</body>
+
+</html>
+<!-- float and clear -->
