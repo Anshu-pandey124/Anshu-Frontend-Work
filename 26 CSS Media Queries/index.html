@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        body{
+            background-color: rgb(67, 187, 227);
+        }
+        /* screen ki jgh speech, all, print */
+
+        @media only screen and (orientation: landscape) {
+            body {
+                border: 2px solid purple;
+            }
+        }
+        @media only screen and (max-width: 400px){
+            body {
+            background-color: rgb(18, 67, 107);
+          }
+        }
+        /* resonsive device banane ke liye use kiya jata hai */
+        /* @media not|only mediatype and (expressions) [screen, print, speech, all, print, etc{
+            CSS-Code;
+            */
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(100, 163, 235);
+            margin:2px;
+            padding:5px;
+            flex-direction: column;
+        }
+
+        .boxes{
+            display: flex;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        Hey i am a div!
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
