@@ -1,0 +1,50 @@
+.container {
+            width: 80vw;
+            height: 100vh;
+            border: 2px solid rgb(2, 2, 18);
+            display: grid;
+            /* grid-template-columns: 100px [pahela] 100px [dushra] 100px [t]; */
+            /* grid-template-rows: 150px 100px; */
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            /* grid-template-columns: repeat(4, minmax(100px, 1fr)); */
+             grid-template-columns: repeat(4, 80px);
+             justify-content: center;
+             /* justify-content, justify-line:-- ka use tab karte hai jab grid container bada hai grid kafi chchoti hai container ke comparision me  */
+            /* fr:- its is unit which is define fraction */
+            grid-template-rows: repeat(2, 40px);
+            align-content: center;
+            gap: 20px 30px;
+            /* column-gap: 30px; */
+            align-items: center;
+            justify-items: center;
+            /* jutify-content, align-items ye shell ke andar hote hai */
+            /* SHELL:- grid hoti hai ushke andar box banate hai to uae shell kahte hai */
+            place-content: center;
+            place-items: center;
+            /* place-content, place-items:-- use karne se jutify-content, align-items
+            justify-content, justify-line
+            ye 4ro set ek sath set ho jate hai
+             */
+        }
+
+        .item {
+            border: 2px solid rgb(192, 21, 21);
+            height: 60px;
+           width: 60px;
+        }
+
+        /* .item4 {
+            grid-row: 1/2;
+            grid-column: pahela/t;
+            /* ishka mtlb hota hai grid 1 se start hoke grid 2 tak jayega 
+    }*/
+
+        .item1 {
+            grid-row: 1/2;
+            /* OR you can do */
+            grid-column: 1/2;
+            /* OR same thing*/
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }

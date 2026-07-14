@@ -1,0 +1,38 @@
+
+        .container {
+            border: 2px solid black;
+            display: grid;
+            grid-template-areas: "nav nav nav"
+                "side article article"
+                "footer footer footer";
+        }
+
+        .item {
+            border: 2px solid blueviolet;
+            height: 50px;
+            /* width: 50px; */
+            padding-inline-start: 25px;
+            margin: 10px;
+        }
+
+        .item1 {
+            grid-area: nav;
+            background-color: pink;
+        }
+
+        .item2 {
+            grid-area: side;
+            background-color: aqua;
+            /* align-items: center; */
+            text-align: center;
+        }
+
+        .item3 {
+            grid-area: article;
+            background-color: blanchedalmond;
+        }
+
+        .item4 {
+            grid-area: footer;
+            background-color: violet;
+        }
