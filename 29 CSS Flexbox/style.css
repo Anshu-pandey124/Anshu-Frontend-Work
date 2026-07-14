@@ -1,0 +1,54 @@
+.container {
+            border: 2px solid pink;
+            display: flex;
+            height: 80vh;
+            justify-content: center;
+            /* content ko center left right bottom top karne me help karta hai */
+            align-items: center;
+            /* vertically manage karta haai | */
+            /* holizontally manage karta hai __*/
+            flex-direction: row;
+            /* direction change hota hai */
+            flex-wrap: wrap;
+            /* flex-wrap se jo bhi content hota hai wo upar ya niche ki tarf shift kar sakte hai aor overflow se bach jate hai */
+            align-content: center;
+            /* aline-content ka use tab karte hai jab items ek line me nhi aa pate hai */
+            /* THERE IS NO JUSTIFY-ITEMS in flexbox */
+            /* flex-flow: row row-reverse; */
+            /* flex-direction , flex-wrap */
+            /* gap: 30px;
+            row-gap: 30px;
+            column-gap: 40px */
+            gap: 30px 40px;
+            /* row,column gap */
+        }
+
+        .item {
+            flex-grow: 1;
+            height: 60px;
+            width: 60px;
+            border: 2px solid rgb(29, 162, 206);
+            margin: 4px;
+            background-color: aquamarine;
+        }
+
+        /* order jitna kam hoga item utne pahle item aayega */
+        .order-1 {
+            order: 1;
+        }
+
+        .order-2 {
+            order: 2;
+        }
+
+        .order-31 {
+            order: 3;
+        }
+
+        /* item-grow item ki jgh ko bhada deta hai */
+        /* jo main item hai waha pe bhi item ka   */
+        .item1 {
+            /* flex-grow: 2; */
+            /* flex-shrink: 2; */
+            align-self: flex-end;
+        }
