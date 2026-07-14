@@ -1,0 +1,29 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            border: 2px solid blueviolet;
+            width: 200px;
+            height: 200px;
+        }
+        .box{
+            height: 50px;
+            width: 50px;
+            border: 2px solid purple;
+            background-color: pink;
+            transform-origin: 0 0;
+            /* transform: rotate(40deg); */
+            transform: rotate(0.125turn);
+            /* transform: rotateX(50deg); */
+            /* transform: scale(1.5); */
+            /* transform: skew(10deg); */
+            /* transform: translate(34px) ; */
+            /* translate me item apni jgh change kar leta hai */
+            /* transform: translateX(40%) skew(40deg) translateY(50%) ; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
