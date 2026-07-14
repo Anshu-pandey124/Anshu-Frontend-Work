@@ -1,0 +1,56 @@
+
+        body {
+            background-color : black;
+        }
+        .bg-black {
+            height : 100%;
+            width : 100%;
+            background-color : black;
+            position : absolute;
+            top : 0;
+            left : 0;
+        }
+        .bg-yellow {
+            height : 100%;
+            width : 50%;
+            position : absolute;
+            right : 0px;
+            top : 0px;
+            background-color : rgb(138, 138, 62);
+            animation : myAnimation 1s ease-in-out 1;
+            z-index : 2;
+            will-change : transform;
+        }
+        @keyframes myAnimation {
+            from {
+                transform : scaleX(3)
+            }
+            to {
+                transform : scaleX(1)
+            }
+        }
+        .text {
+            font-size : 4rem;
+            color : white;
+            font-weight : 500;
+            /* display : flex;
+            align-items : center;
+            justify-content : center; */
+            z-index : 1;
+            position : absolute;
+            top : 10rem;
+            height : 30rem;
+            left : 10px;
+            width : 100%;
+            animation : myAnimation2 1s ease-in-out 1;
+            animation-delay : 1s;
+        }
+        @keyframes myAnimation2 {
+            from {
+                transform : translateX(800px)
+            }
+            to {
+                transform : translateX(10px)
+            }
+        }
+    
