@@ -1,0 +1,22 @@
+
+        .container{
+            height: 400px;
+            width: 500px;
+            border: 2px solid black ;
+            /* background-color: rgb(221, 226, 194); */
+            /* background-position: center center; */
+             /* background-image: url("https://deih43ym53wif.cloudfront.net/santa_monica_shutterstock_360495383_602b61bfe7.jpeg"); */
+             background-image: url(https://imgs.search.brave.com/Plzd7DI08AMTYDjn8eOttOdWV3XXrqr9U9v9hipzt9U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzRjLzFj/LzU0LzRjMWM1NDNj/ZWE3ZmRmZDRiYTU4/NjhhOGU0OTRiNTQ0/LmpwZw);
+             background-repeat: no-repeat;
+             background-clip: border-box;
+             background-clip: border-box;
+        }
+        img{
+            height: 400px;
+            width: 500px;
+            object-fit: cover; 
+            object-position: bottom right;
+            object-position: 20px 30px;
+            object-fit: fill;
+        }
+  
